@@ -15,12 +15,12 @@ function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-if(edad >= 18) {
+  if(edad >= 18) {
     return "Allowed";
-}
-else {
+  }
+  else {
     return "Not allowed";
-}
+  }
 }
 
 function conection(status) {
@@ -38,6 +38,7 @@ function conection(status) {
   else {
     return "Offline";
   }
+}
 
 function saludo(idioma) {
   // Devuelve un saludo en tres diferentes lenguajes:
@@ -46,18 +47,15 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-if (idioma === 'aleman') {
-  return 'Guten Tag!';
-}
-else if (idioma === 'mandarin') {
-  return "Ni Hao!";
-}
-else if (idioma === 'ingles'){
-  return 'Hello';
-}
-else {
-  return 'Hola';
-}
+  if(idioma === 'aleman') {
+    return 'Guten Tag!';
+  } else if (idioma === 'mandarin') {
+    return 'Ni Hao!';
+  } else if (idioma === 'ingles') {
+    return 'Hello!';
+  } else {
+    return 'Hola!';
+  }
 }
 
 function colors(color) {
@@ -83,19 +81,18 @@ function colors(color) {
 }
 
 function esDiezOCinco(numero) {
-  // Devuelve "true" si "numero" es 10 o 5
-  // De lo contrario, devuelve "false"
-  // Tu código:
-  return numero === 10 || numero === 5;
+    // Devuelve "true" si "numero" es 10 o 5
+    // De lo contrario, devuelve "false"
+    // Tu código:
+    return numero === 10 || numero === 5;
 }
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-return numero < 50 && numero > 20;
+  return numero < 50 && numero > 20;
 }
-
 
 function esEntero(numero) {
   // Devuelve "true" si "numero" es un entero (int/integer)
@@ -149,6 +146,7 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
+  // Test
   if( numero < 2) return false;
   if(numero === 2) return true;
   for(var i = 2; i < numero; i++) {
@@ -172,8 +170,7 @@ function esVerdadero(valor){
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-  //Escribe tu código aquí   
-  
+  //Escribe tu código aquí     
   let arrayTablaDel6 = []
   for (let i = 0; i < 11; i++) {
         arrayTablaDel6.push(6 * i)
@@ -182,9 +179,8 @@ function tablaDelSeis(){
 }
 
 function tieneTresDigitos(numero){
-  //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
+  //Leer un número entero y determinar si tiene 3 dígitos.
   //Escribe tu código aquí
-  
   if(numero > 99 && numero < 1000){
     return true
   }
@@ -192,9 +188,6 @@ function tieneTresDigitos(numero){
 }
 
 function doWhile(numero) {
-  //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
-  //Retornar el valor final.
-  //Usar el bucle do ... while.
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
@@ -207,8 +200,6 @@ function doWhile(numero) {
   while(i < 8);
   return a;
 }
-
-
 
 // No modificar nada debajo de esta línea
 // --------------------------------
